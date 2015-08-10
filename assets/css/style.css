@@ -1,0 +1,993 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+html, body {
+    font-size: 14px;
+    height: 100%;
+    font-family: "MicrosoftYaHei";
+}
+a {
+    text-decoration: none;
+}
+
+/* header start */
+
+.header {
+    background-color: #212121;
+    height: 65px;
+    padding: 0% 2%;
+    width: 100%;
+}
+
+.header img{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    z-index: 10;
+}
+
+.header ul.menu {
+    color: #EEE;
+    position: absolute;
+    width: 540px;
+    left: 50%;
+    margin-left: -270px;
+}
+.header ul.menu > li {
+    width: 180px;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    box-shadow: inset 0px 0px 1px 1px #2A2A2A;
+    border-left: 1px solid #0B0B0B;
+    border-right: 1px solid #0B0B0B;
+    float: left;
+}
+/*
+.header ul.menu > li a {
+    color: #EEE;
+}
+
+.header li.active,.header li:hover {
+    background-color: #000;
+    color: #116EAB;
+}
+*/
+
+
+
+.header .menu-item a {
+    display: inline-block;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 53px center;
+    background-size: 35px auto;
+    padding-left: 45px;
+    color: #EEE;
+    width:100%;
+}
+.header .menu-item:hover a, .header .current-menu-item a {
+    background-color: #000;
+    color: #116EAB;
+}
+
+/* 景点 */
+.header .menu-item-40 a {
+    background-image: url("../img/icon_jingdian.png");
+}
+.header .menu-item-40.current-menu-item a {
+    background-image: url("../img/icon_jingdian_active.png");
+}
+
+/* 酒店 */
+.header .menu-item-41 a {
+    background-image: url("../img/icon_jiudian.png");
+}
+.header .menu-item-41.current-menu-item a{
+    background-image: url("../img/icon_jiudian_active.png");
+}
+
+/* 美食 */
+.header .menu-item-42 a {
+    background-image: url("../img/icon_meishi.png");
+}
+.header .menu-item-42.current-menu-item a {
+    background-image: url("../img/icon_meishi_active.png");
+}
+
+.header-form {
+    clear: fixed;
+    float: right;
+    width: 22%;
+    height: 65px;
+    padding: 14px 0px;
+}
+
+.search{
+    width: 60%;
+    
+}
+
+.searchform {
+    border: 1px solid #908A82;
+}
+
+.searchform .searchtext {
+    height: 37px;
+    padding: 0px 0px 0px 10px;   
+    background-color: #212121;
+    color: #908A82;
+    outline: none;
+    border: 0 none;
+}
+.searchform .submit{
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 35px auto;
+    background-color: #212121;
+    background-image: url("../img/icon_sousuo.png");
+    background-image: url("../img/icon_sousuo.png");
+    height: 37px;
+    width:35px;
+    border:0 none;
+}
+
+
+.header-form .language {
+    width: 20%;
+    background-color: #212121;
+    float: right;
+    height: 37px;
+    line-height: 37px;
+}
+.header-form .language button {
+    height: 100%;
+    width: 100%;
+    color: #908A82;
+    background-color: #212121;
+    border: 0;
+}
+.jq-dropdown .jq-dropdown-menu {
+    margin-left: -100px;
+}
+
+/* header end */
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: rgba(255,255,255,.6);
+
+    background: #FFF;
+}
+.banner .inner {
+    margin-top: 130px;
+}
+.banner ul {
+    list-style: none;
+    width: 300%;
+}
+.banner ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    min-height: 400px;
+
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+.banner .btn {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 25px 0 0;
+    padding: 23px 5px;
+    clear: both;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    font-size: 40px;
+}
+.banner .inner .btn-index {
+    text-align: center;
+    display: inline-block;
+    margin: 25px 0 0;
+    padding: 23px 40px;
+    clear: both;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    font-size: 40px;
+}
+.banner .btn img {
+    height: 45px;
+    width: auto;
+    margin-bottom: -8px;
+}
+.banner .btn, .banner .dot {
+    -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 100%;
+}
+.banner .dots li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    margin: 0 4px;
+
+    text-indent: -999em;
+    *text-indent: 0;
+
+    background-color: #1E2427;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #F25933;
+}
+.banner .unslider-arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    z-index: 11;
+}
+.banner .unslider-arrows .unslider-arrow {
+    width: 60px;
+    height: 100%;
+    padding: 0px 20px;
+}
+.banner .unslider-arrows a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+.banner .unslider-arrows .prev {
+    float: left;
+}
+.banner .unslider-arrows .prev > a{
+    background-image: url("../img/arrow_prev.png")
+}
+.banner .unslider-arrows .next {
+    float: right;
+}
+.banner .unslider-arrows .next > a{
+    background-image: url("../img/arrow_next.png")
+}
+.sub-menu {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding:0px 30%;
+    z-index: 12;
+}
+
+.sub-menu a{
+    color:#fff;
+}
+
+.photo-grid {
+    height: 400px;
+}
+.grid-btn {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 25px 0 0;
+    padding: 20px 5px;
+    clear: both;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    font-size: 40px;
+    z-index: 200;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 150px;
+}
+.grid-btn img{
+    margin-bottom: -7px;
+}
+.grid-btn a {
+    color: #fff;
+    z-index: 200;
+}
+.column {
+    height: 100%;
+    width: 33%;
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.mask {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: background-color 0.3;
+    -o-transition: background-color 0.3;
+    -moz-transition: background-color 0.3;
+    transition: background-color 0.3;
+    font-size: 15px;
+}
+.mask:hover {
+    background-color: rgba(0,0,0,0);
+}
+.mask img {
+    margin-top: 15px;
+    width: 45px;
+    height: auto;
+}
+/* news */
+.news {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    background: #FFF;
+}
+.news ul {
+}
+.news ul li {
+    height: 180px;
+    padding: 0% 4%;
+}
+.news ul li .news-item {
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding: 30px 10px 40px 10px;
+}
+.news-item .news-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.news .news-right {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    color: #555;
+}
+.news h5 {
+    font-weight: bold;
+    font-size: 18px;
+    height: 2em;
+    line-height: 1.5em;
+}
+.news-item .desc {
+    overflow: hidden;
+    line-height: 1.7em;
+    height: 64px;
+}
+.news .btn, .news .dot {
+    -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
+
+.news .dots {
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 100%;
+}
+.news .dots li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    margin: 0 4px;
+
+    text-indent: -999em;
+    *text-indent: 0;
+
+    background-color: #1E2427;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.news .dots li.active {
+    background: #F25933;
+}
+
+/* content */
+.content {
+    width: 100%;
+    min-height: 300px;
+    background-color: #eee;
+    color: #666;
+    padding: 0% 8%;
+    line-height: 2em;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.padding {
+    padding: 0px 15px;
+    margin-bottom: 90px;
+}
+.col-25-block {
+    float: left;
+    width: 25%;
+}
+.col-33-block {
+    float: left;
+    width: 33%;
+}
+.col-50-block {
+    float: left;
+    width: 50%;
+}
+.col-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    height: 100%;
+}
+.white {
+    background-color: white;
+}
+.grey {
+    background-color: #eee;
+}
+.load-more {
+    width: 100%;
+    text-align: center;
+}
+.load-more button {
+    width: 50%;
+    border: 0;
+    border-radius: 0;
+    background-color: #fff;
+    height: 60px;
+    font-size: 16px;
+    color: #777;
+}
+
+.load-more button i {
+    display: none;
+}
+.load-more button span {
+    display: inline-block;
+}
+.load-more.loading button i {
+    display: inline-block;
+}
+.load-more.loading button span {
+    display: none;
+}
+/* attractions */
+.content .attractions {
+    background-color: #fff;
+}
+.content .attractions img {
+    width: 100%;
+    height: auto;
+}
+.content .attractions h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.content .attractions .desc {
+    font-size: 14px;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2em;
+    padding: 0em 1.5em;
+    margin-bottom: 30px;
+}
+
+.content .attractions .link {
+    text-align: center;
+    position: relative;
+    bottom: -10px;    
+}
+.content .attractions .link a {
+    padding: 15px 10%;
+    background-color: #0F6EAB;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* cate */
+
+.content .cate {
+    background-color: #fff;
+}
+.content .cate img {
+    width: 100%;
+    height: auto;
+}
+.content .cate h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.content .cate .desc {
+    font-size: 14px;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2em;
+    padding: 0em 1.5em;
+    margin-bottom: 30px;
+}
+
+.content .cate .link {
+    text-align: center;
+    position: relative;
+    bottom: -10px;    
+}
+.content .cate .link a {
+    padding: 15px 10%;
+    background-color: #0F6EAB;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* hotel */
+.content .hotel {
+    width: 100%;
+    height: 340px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.right-separation {
+    border-right: 1px solid #C9C9C9;
+}
+
+.content .hotel .hotel-img {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.content .hotel .hotel-info {
+    text-align: center;
+    padding-top: 50px;
+}
+.content .hotel .hotel-info .name {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+.content .hotel .hotel-info .rating {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.content .hotel .hotel-info .address {
+    font-size: 13px;
+    line-height: 1.5em;
+    font-weight: bolder;
+    height: 80px;
+}
+.content .hotel .hotel-info .hotel-btn {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+
+.content .hotel .hotel-info .hotel-btn > a {
+    background-color: #0F6EAB;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 15px 40px;
+    border-radius: 2px;
+}
+
+.content .hotel .hotel-desc {
+    padding: 5px 20px;
+    font-size: 13px;
+    color: #999;
+    line-height: 2em;
+    min-height: 190px;
+}
+.content .hotel .hotel-service {
+    padding: 0px 20px;
+}
+.content .hotel .hotel-service > li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.content .hotel .hotel-service > li > img{
+    width: 30%;
+    height: auto;
+}
+/* hotel end */
+
+/* detail */
+.content .article {
+    display: inline-block;
+    width: 76%;
+    margin-bottom: 40px;
+    padding-right: 25px;
+    border-right: 1px solid #D2D2D2;
+    float: left;
+}
+.content .article .img-block {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content .article .img-block img {
+    width: auto;
+    height: 200px;
+    margin-right: 3%;
+    margin-bottom: 30px;
+}
+.content h4 {
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.content .intro {
+    display: inline-block;
+    width: 22%;
+    line-height: 1.8em;
+    margin-bottom: 40px;
+    float: left;
+    padding-left: 20px;
+    line-height: 2.5em;
+}
+.content .intro .sub {
+    color: #aaa;
+    font-size: 13px;
+}
+.content .intro #baidu_map {
+    width: 100%;
+}
+/* content end */
+
+/* footer start */
+.footer {
+    width: 100%;
+    height: 645px;
+    background-color: #212121;
+    color: #949494;
+}
+
+.footer .line {
+    height: 60px;
+    width: 68%;
+    margin: 0 auto;
+    border-bottom: 1px solid #353535;
+    text-align: center;
+}
+.footer #taste {
+    width: 205px;
+    height: 45px;
+    background-color: #212121;
+    margin: 0 auto;
+    margin-top: -23px;
+    text-align: center;
+}
+.footer #taste img {
+    width: 127px;
+    height: auto;
+}
+.footer .menu {
+    margin: 0 auto;
+    height: 85px;
+    width: 48%;
+    padding: 30px 0px 40px 0px;
+}
+.footer .menu > li {
+    float: left;
+    width: 20%;
+    font-size: 15px;
+    text-align: center;
+    height:15px;
+    border-right: 1px solid #949494;
+}
+.footer .menu > li:last-child{
+    border-right: 1px solid transparent;
+}
+
+.footer .menu > li > a{
+    color: #949494;
+}
+.footer .menu > li.separate {
+    width: 0%;
+}
+.footer #contact {
+    padding: 0% 8%;
+    width: 100%;
+    height: 424px;
+}
+.footer #contact .text{
+    height: 28px;
+}
+.friend {
+    float: left;
+    width: 75%;
+    min-height: 300px;
+}
+.friend .links {
+    width: 100%;
+    min-height: 200px;
+    padding-top: 55px;
+}
+.friend .links > li {
+    min-width: 160px;
+    width: 8.4%;
+    height: 67px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+.wechat {
+    float: right;
+    width: 24%;
+    height: auto;
+}
+.wechat img {
+    width: 100%;
+    height: auto;
+}
+#info {
+    width: 100%;
+    background-color: #000;
+    padding: 0% 8%;
+    font-size: 9px;
+    float: left;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+#info .copy {
+    float:right;
+}
+/* footer end */
+/* index */
+.index-title {
+    margin-bottom: 30px;
+}
+.index-title.center {
+    text-align: center;
+}
+.index-title > span {
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    padding: 5px 0px 5px 50px;
+}
+
+#attractions {
+    position: relative;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255,255,255,.6);
+    background: #FFF;
+}
+#attractions .inner {
+    margin-top: 130px;
+}
+#attractions ul {
+    list-style: none;
+    width: 300%;
+}
+#attractions ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    height: 500px;
+
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+#attractions ul li .attractions-img {
+    float: left;
+    width: 76%;
+    height: 100%;
+}
+#attractions ul li .attractions-panel {
+    float: left;
+    width: 24%;
+    color: #333;
+    padding-top: 90px;
+}
+#attractions .attractions-arrows {
+    position: absolute;
+    width: 24%;
+    z-index:99;
+    right: 0;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: #fff;
+}
+#attractions .attractions-arrows div{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    display: inline-block;
+    color: #333;
+}
+#attractions .attractions-arrows .attractions-arrow {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+}
+#attractions .attractions-arrow a {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    color: #C5C5C5;
+    font-size: 20px;
+}
+#attractions .attractions-arrows .prev {
+    float: left;
+    border-right: 1px solid #DBDBDB;
+}
+#attractions .attractions-arrows .next {
+    float: right;
+    border-left: 1px solid #DBDBDB;
+}
+#attractions .attractions-panel .attractions-logo {
+    margin: 0 auto;
+    width: 70px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CBCBCB;
+}
+#attractions .attractions-panel .attractions-logo img{
+    width: 50px;
+    height: auto;
+}
+#attractions .attractions-panel h3 {
+    font-weight: bolder;
+    margin: 25px 0px;
+}
+#attractions .attractions-panel .attractions-desc {
+    text-align: left;
+    font-size: 13px;
+    line-height: 2em;
+    padding: 0px 1.5em;
+}
+
+#attractions .attractions-panel .attractions-btn {
+    margin-top: 60px;
+}
+#attractions .attractions-panel .attractions-btn > a{
+    padding: 15px 10%;
+    background-color: #0F6EAB;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#hotel {
+    height: 580px;
+}
+#hotel .hotel-hr {
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url("../img/hotel_hr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+#hotel .hotel-item {
+    padding: 0px 10px;
+}
+#hotel .hotel-item .hotel-img {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#hotel .hotel-item h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #333;
+}
+#hotel .hotel-item .hotel-desc {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+#cate {
+    height: 540px;
+}
+#cate > div {
+    height: 380px;
+}
+#cate .all_cate {
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+#cate .all_cate a {
+    padding: 15px 20px;
+    background-color: #0F6EAB;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+#video > div{
+    text-align: center;
+}
