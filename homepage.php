@@ -3,13 +3,15 @@
 	 Template Name: 首页 
 	*/
 	
-	//get_header(); ?>
+	//get_header(); 
+    include 'languages/properties.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>品味贵州</title>
+    <title><?php echo LanguageProperty::getText('title'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_url');?>/assets/img/logo.png" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />

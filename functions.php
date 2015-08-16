@@ -89,6 +89,7 @@ function set_language_cookie() {
 //在站点初始化时请用cookie
 add_action( 'init', 'set_language_cookie');
 
+
 // 添加自定义栏目
 //add_action('publish_page', 'add_custom_field_automatically');
 //add_action('publish_post', 'add_custom_field_automatically');
