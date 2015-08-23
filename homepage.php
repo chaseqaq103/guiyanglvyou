@@ -108,9 +108,9 @@
                     $img_url = wp_get_attachment_image_src($img_id);
                     $img_url = $img_url[0];
             ?>
-                <?if($index %3 == 0) {?>
+                <?if($index %3 == 0):?>
                 <li>
-                <?php } ?>
+                <?php endif;?>
                 <div class="news-item">
                     <div class="news-img" style="background-image: url('<?php echo $img_url ?>');"></div>
                     <div class="news-right">
@@ -121,9 +121,9 @@
                     </div>
                 </div>
 
-                <?if($index %3 == 0 && $index > 0) {?>
+                <?if($index %3 == 0 && $index > 0):?>
                 </li>
-                <?php } ?>
+                <?php endif;?>
             <?php    
                 $index++;
                 endwhile; 
