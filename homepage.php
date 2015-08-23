@@ -101,16 +101,17 @@
         <ul>
             <?php 
             $query = new WP_Query('tag=topnews');
-            if ($query->have_posts()) :
+            if ($query->have_posts()) {
                 $index = 0;
-                while ($query->have_posts()) : $query->the_post();  
+                while ($query->have_posts()) { 
+                    $query->the_post();  
                     $img_id = get_post_thumbnail_id();
                     $img_url = wp_get_attachment_image_src($img_id);
                     $img_url = $img_url[0];
             ?>
-                <?if($index %3 == 0):?>
+                <?if($index %3 == 0) {?>
                 <li>
-                <?php endif;?>
+                <?php } ?>
                 <div class="news-item">
                     <div class="news-img" style="background-image: url('<?php echo $img_url ?>');"></div>
                     <div class="news-right">
@@ -121,16 +122,16 @@
                     </div>
                 </div>
 
-                <?if($index %3 == 0 && $index > 0):?>
+                <?if($index %3 == 0 && $index > 0) { ?>
                 </li>
-                <?php endif;?>
+                <?php } ?>
             <?php    
                 $index++;
-                endwhile; 
-                if($index %3 !=0):?>
+                }
+                if($index %3 !=0) {?>
                 </li>
-            <?php endif;
-            endif; ?> 
+                <?php }
+            } ?> 
         </ul>
     </div>
 	
