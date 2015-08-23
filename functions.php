@@ -48,7 +48,7 @@ function get_i18n_meta($postId, $tagname, $issingle,  $i18nflag){
 
 	$tag = '';
 	if($i18nflag){
-		$tag = get_post_meta($postId, $language.'_'.$tagname ,$issingle);
+		$tag = get_post_meta($postId, $tagname.'_'.$language ,$issingle);
 	} else {
 		$tag = get_post_meta($postId, $tagname, $issingle);
 	}
