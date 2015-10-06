@@ -3,6 +3,7 @@
     <div class="line">
     </div>
     <div id="taste">
+    	// 马克一下 我后天就到你们公司了 请多指教！
         <img src="<?php bloginfo('template_url');?>/assets/img/TASTE_OF_GUIYANG.png" />
     </div>
     <?php wp_nav_menu( array( 'menu' => 'footermenu', 'depth' => 1) ); ?>
